@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Tasks</title>
+</head>
+<body>
+    <div id="app">
+        <h1 class = "title">Tasks</h1>
+        <div class="tasks__container">
+            {{#each messages}}
+                <div class="task__elem" id = {{this.message_id}}>
+                    <p class="text__elem">{{this.data}}</p>
+                    <img class = "deleteButton" src="./img/close.jpg" alt="" >
+                </div>
+            {{/each}}
+        </div>
+        <div class="form__tasks__bottom">
+            <div id = "task__form">
+                <textarea name="" id="form__area" cols="30" rows="10"></textarea>
+                <button id = "add__task">Add new task</button>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery-3.6.0.min.js"></script> 
+    <script src="../Tasks__front.js"></script>
+</body>
+</html>

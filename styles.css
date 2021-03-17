@@ -1,0 +1,50 @@
+body{
+    font-size: 14px;
+}
+.title{
+    text-align: center;
+}
+
+.tasks__container{
+    height: 500px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.form__tasks__bottom{
+    border: 1px solid black;
+}
+
+.task__elem{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 2px;
+}
+
+.deleteButton{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.text__elem{
+    display: inline-block;
+}
+
+#task__form{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#task__form textarea{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#task__form button{
+    display: inline-block;
+    vertical-align: middle;
+}
